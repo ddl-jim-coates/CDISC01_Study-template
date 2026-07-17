@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_adae",
+  "source_file": "prod/adam/ADAE.sas",
+  "source_blob_sha": "6524aca351b0cb4132ba978d404e738673b549ba",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Creates ADaM ADAE: merges ADSL + SDTM.AE by USUBJID, buckets AESTDY into VISITNUM (3/4/12), sorts, then merges with SDTM.EX by USUBJID+VISITNUM. domino_is_workflow_job hardcoded to the standalone branch; autoexec.sas stands up small mock ADSL/AE/EX datasets shaped to exercise the visitnum bucketing across all three bands (early/mid/late AESTDY). Merge/sort/bucketing logic is unmodified; added a trailing PROC PRINT for visible output."
+}

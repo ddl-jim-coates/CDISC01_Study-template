@@ -1,0 +1,14 @@
+
+  Obs  studyid           usubjid  subjid                actarm  sex   race  country  age       dmdtc
+-----  -------  ----------------  ------  --------------------  ---  -----  -------  ---  ----------
+    1  CDISC01  CDISC01-701-1015  1015    Placebo               F    WHITE  USA       63  2023-01-05
+    2  CDISC01  CDISC01-701-1023  1023    Xanomeline Low Dose   M    WHITE  USA       71  2023-01-06
+    3  CDISC01  CDISC01-701-1028  1028    Xanomeline High Dose  F    BLACK  USA       68  2023-01-07
+    4  CDISC01  CDISC01-701-1033  1033    Placebo               M    WHITE  USA       55  2023-01-08
+    5  CDISC01  CDISC01-701-1040  1040    Xanomeline Low Dose   F    ASIAN  USA       74  2023-01-09
+    6  CDISC01  CDISC01-701-1047  1047    Xanomeline High Dose  M    WHITE  USA       60  2023-01-10
+    7  CDISC01  CDISC01-701-1052  1052    Placebo               F    WHITE  USA       66  2023-01-11
+    8  CDISC01  CDISC01-701-1058  1058    Xanomeline Low Dose   M    BLACK  USA       58  2023-01-12
+    9  CDISC01  CDISC01-701-1064  1064    Xanomeline High Dose  F    WHITE  USA       77  2023-01-13
+   10  CDISC01  CDISC01-701-1071  1071    Placebo               M    ASIAN  USA       62  2023-01-14
+

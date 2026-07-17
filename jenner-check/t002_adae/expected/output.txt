@@ -1,0 +1,9 @@
+
+  Obs           usubjid                actarm     aeterm    aedecod                       aesoc     aerel  aestdy  visitnum       extrt  exdose
+-----  ----------------  --------------------  ---------  ---------  --------------------------  --------  ------  --------  ----------  ------
+    1  CDISC01-701-1015  Placebo               HEADACHE   Headache   Nervous system disorders    PROBABLE       5         3  Xanomeline       0
+    2  CDISC01-701-1023  Xanomeline Low Dose   NAUSEA     Nausea     Gastrointestinal disorders  POSSIBLE      20         4  Xanomeline      54
+    3  CDISC01-701-1028  Xanomeline High Dose  DIZZINESS  Dizziness  Nervous system disorders    NONE         170        12  Xanomeline      81
+    4  CDISC01-701-1033  Placebo               RASH       Rash       Skin disorders              DEFINITE       8         3  Xanomeline       0
+    5  CDISC01-701-1040  Xanomeline Low Dose   FATIGUE    Fatigue    General disorders           NONE          45         4  Xanomeline      54
+

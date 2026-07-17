@@ -1,0 +1,7 @@
+{
+  "bundle": "t006_t_vscat",
+  "source_file": "prod/tfl/t_vscat.sas",
+  "source_blob_sha": "b988c6f319a3734b223d09ff629a2f30cb9824d3",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Categorical Summary of Vital Signs table: derives PARAMCD/CRIT1CD (out-of-range flags for SYSBP <90/>140, DIABP <60/>90, PULSE <60/>100) from ADVS, filters to post-baseline (AVISITN > 2), computes n (%) e counts per parameter via a %results macro (PROC SQL group-by), concatenates and transposes per parameter (%concatenate_results / %transpose_datasets macros, PROC TRANSPOSE), stacks all 4 parameter blocks, and renders via PROC REPORT into an ODS PDF. Also exercises share/macros/tfl_metadata.sas (inlined here, unmodified logic). domino_is_workflow_job hardcoded to the standalone branch; autoexec.sas stands up a 15-row mock ADVS spanning normal and both out-of-range (H/L) readings for all 3 vital-sign params across all 3 arms, plus metadata.t_vscat. Only the ODS PDF destination path was redirected; all categorical-summary logic is unmodified."
+}

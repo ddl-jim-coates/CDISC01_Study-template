@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-17T12:05:00Z",
+  "_captured_run_id": "r_269babf4450049748f092fc850018845",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DOMINO_IS_WORKFLOW_JOB is false",
+    "NOTE: STYLE template 'newstyle' has been stored (2 elements).",
+    "NOTE: Wrote order_results (7 rows, 7 columns).",
+    "NOTE: PROC REPORT output 7 observations with 6 variables.",
+    "NOTE: ODS PDF: wrote report to"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

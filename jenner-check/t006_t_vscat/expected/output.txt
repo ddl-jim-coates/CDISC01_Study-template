@@ -1,0 +1,31 @@
+                                         Domino Page ^{thispage} of ^{lastpage}
+                                                        CDISC01
+                                                      Table 14.4.1
+                                           Categorical Summary of Vital Signs
+
+Parameter                                                      Placebo                           Xanomeline Low Dose  Xanomeline High Dose
+  Results                                           Statistic   (N=2)                             (N=2)                (N=1)
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Any result                                                                                                                                
+  Patients with post-baseline results               n          2                                 2                    1                   
+  Results meeting criteria of interest              n (%) e    0                                 1 (50.0) 3           1 (100) 3           
+
+Systolic blood pressure                                                                                                                   
+  Patients with post-baseline results               n          2                                 2                    1                   
+    <90 mmHg                                        n (%) e    0                                 0                    1 (100) 1           
+    >140 mmHg                                       n (%) e    0                                 1 (50.0) 1           0                   
+
+Diastolic blood pressure                                                                                                                  
+  Patients with post-baseline results               n          2                                 2                    1                   
+    <60 mmHg                                        n (%) e    0                                 0                    1 (100) 1           
+    >90 mmHg                                        n (%) e    0                                 1 (50.0) 1           0                   
+
+Heart Rate                                                                                                                                
+  Patients with post-baseline results               n          2                                 2                    1                   
+    <60 beats/min                                   n (%) e    0                                 1 (50.0) 1           0                   
+    >100 beats/min                                  n (%) e    0                                 0                    1 (100) 1
+
+                              SBP: Systolic Blood Pressure. DBP: Diastolic Blood Pressure.
+                         Criteria: SBP <90/>140 mmHg, DBP <60/>90 mmHg, HR <60/>100 beats/min.
+                                      Generated via a Jenner compatibility bundle.

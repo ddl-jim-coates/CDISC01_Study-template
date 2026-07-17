@@ -1,0 +1,16 @@
+{
+  "_captured_at": "2026-07-17T12:20:00Z",
+  "_captured_run_id": "r_f82f5229808944bebd9273425210f680",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: PDF REPORT GENERATED SUCCESSFULLY!",
+    "NOTE: Total subjects: 90",
+    "NOTE: - Placebo: 30 subjects",
+    "NOTE: - Low Dose: 30 subjects",
+    "NOTE: - High Dose: 30 subjects",
+    "NOTE: ODS PDF: wrote report to"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

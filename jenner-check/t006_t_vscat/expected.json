@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-17T12:15:00Z",
+  "_captured_run_id": "r_977c5540989140cb90afbc8c4d5043c7",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DOMINO_IS_WORKFLOW_JOB is false",
+    "NOTE: Wrote stack_results (15 rows, 6 columns).",
+    "NOTE: PROC REPORT output 15 observations with 7 variables.",
+    "NOTE: ODS PDF: wrote report to"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

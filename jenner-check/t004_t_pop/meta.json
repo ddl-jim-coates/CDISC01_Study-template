@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_t_pop",
+  "source_file": "prod/tfl/t_pop.sas",
+  "source_blob_sha": "4c02e293f237f7db3550628c0ba5e3f2a2fff0a0",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Summary of Populations Table: buckets ADSL subjects into 6 age groups x 3 treatment arms, computes n (%) per cell via PROC SQL + a macro loop (age_data), transposes with PROC TRANSPOSE, and renders via PROC REPORT into an ODS PDF using a custom PROC TEMPLATE style. Also exercises share/macros/tfl_metadata.sas (inlined here at commit 2f2662b1fdf39791ee5d46c1fe4e319919cb5397, unmodified logic) which turns a one-row metadata dataset into title/footnote macro variables via CALL SYMPUT arrays. domino_is_workflow_job hardcoded to the standalone branch; autoexec.sas stands up a 10-row mock ADSL (spanning all 6 age bands and all 3 arms) plus a mock metadata.t_pop row. Only the ODS PDF destination path was redirected (was /mnt/artifacts/TFL, now the run's working directory); all table-building logic is unmodified."
+}

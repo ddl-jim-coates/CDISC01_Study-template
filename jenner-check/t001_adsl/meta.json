@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_adsl",
+  "source_file": "prod/adam/ADSL.sas",
+  "source_blob_sha": "bcc281ba141aef7f3cbd0bc33fdc047d219a42e5",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Creates ADaM ADSL by reading SDTM.DM (data adam.adsl; set sdtm.dm; run;). domino_is_workflow_job hardcoded to the standalone branch (was %sysget(DOMINO_IS_WORKFLOW_JOB) on Domino); autoexec.sas stands up sdtm.dm as a 10-row mock demographics dataset (3 treatment arms, matching actarm values used across the repo's TFL programs) in place of the Domino-managed sdtm libname from domino.sas. Added a trailing PROC PRINT so the run produces visible output; the merge/data-step logic is unmodified."
+}
