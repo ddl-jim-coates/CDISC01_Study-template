@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-17T11:55:00Z",
+  "_captured_run_id": "r_cbe8c39f4ce84b76a315885c3a533a2d",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.dm (10 rows, 9 columns).",
+    "NOTE: DOMINO_IS_WORKFLOW_JOB is false",
+    "NOTE: Read 10 rows from sdtm.dm.",
+    "NOTE: Wrote adam.adsl (10 rows, 9 columns).",
+    "NOTE: PROC PRINT completed: 10 observations printed, 9 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

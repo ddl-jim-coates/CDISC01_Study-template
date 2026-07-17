@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-17T12:10:00Z",
+  "_captured_run_id": "r_6baf9dfcb8014f28951337942d8e98d0",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DOMINO_IS_WORKFLOW_JOB is false",
+    "NOTE: Table counts_word created.",
+    "NOTE: PROC REPORT output 19 observations with 6 variables.",
+    "NOTE: ODS PDF: wrote report to"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

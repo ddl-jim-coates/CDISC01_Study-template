@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_t_ae_rel",
+  "source_file": "prod/tfl/t_ae_rel.sas",
+  "source_blob_sha": "6ab2a7ed528facc614786a3ca79728bd5185833b",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Treatment Emergent Adverse Events by Relationship table: buckets AEREL into Related/Not Related, uses a local %ne_freq macro (PROC SQL group-by counts) to build patient/event counts sliced 6 different ways, cross-joins against a cartesian template (PROC SQL), ranks SOC/PT by frequency (PROC RANK), double-transposes into a wide by-treatment layout (PROC TRANSPOSE x2), and renders via PROC REPORT into an ODS PDF. Also exercises share/macros/tfl_metadata.sas (inlined here, unmodified logic). domino_is_workflow_job hardcoded to the standalone branch; autoexec.sas stands up a small mock ADAE (covering all 3 relatedness values and multiple SOC/PT combos) + ADSL + metadata.t_ae_rel (5 footnotes). Only the ODS PDF destination path was redirected; all counting/ranking/transpose logic is unmodified."
+}

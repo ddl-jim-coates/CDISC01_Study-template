@@ -1,0 +1,26 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library ADAM assigned path=/tmp/work/r_cbe8c39f4ce84b76a315885c3a533a2d/work/e26be9cb-613d-4192-bf82-cf45f8902a63.
+NOTE: DATA work.dm
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote work.dm (10 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Library SDTM assigned path=/tmp/work/r_cbe8c39f4ce84b76a315885c3a533a2d/work/e26be9cb-613d-4192-bf82-cf45f8902a63.
+NOTE: DOMINO_IS_WORKFLOW_JOB is false
+NOTE: DATA adam.adsl
+
+
+NOTE: Read 10 rows from sdtm.dm.
+NOTE: Wrote adam.adsl (10 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=adam.adsl
+
+NOTE: PROC PRINT completed: 10 observations printed, 9 variables

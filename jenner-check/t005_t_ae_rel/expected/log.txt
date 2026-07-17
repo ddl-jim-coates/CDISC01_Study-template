@@ -1,0 +1,238 @@
+NOTE: Jenner v1.5.37 (build v1.5.37+886f95a5f1.20260717T051227Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library ADAM assigned path=/tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013.
+NOTE: Library METADATA assigned path=/tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013.
+NOTE: DATA adam.adae
+
+NOTE: Processing inline DATALINES (6 lines)
+
+NOTE: Read 6 rows from DATALINES.
+NOTE: Wrote adam.adae (6 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adam.adsl
+
+NOTE: Processing inline DATALINES (6 lines)
+
+NOTE: Read 6 rows from DATALINES.
+NOTE: Wrote adam.adsl (6 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA metadata.t_ae_rel
+
+
+NOTE: Wrote metadata.t_ae_rel (1 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DOMINO_IS_WORKFLOW_JOB is false
+NOTE: PROC TEMPLATE 0 template(s)
+
+NOTE: STYLE template 'newstyle' has been stored (2 elements).
+NOTE: Option ORIENTATION changed to LANDSCAPE.
+NOTE: PROC FORMAT library=WORK
+
+NOTE: PICTURE pctmf defined (7 ranges)
+NOTE: DATA teae
+
+
+NOTE: Read 6 rows from adam.adae.
+NOTE: Wrote teae (6 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adsl1
+
+
+NOTE: Read 6 rows from adam.adsl.
+NOTE: Wrote adsl1 (6 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA aes
+
+
+NOTE: Read 6 rows from teae.
+NOTE: Read 12 rows from teae.
+NOTE: Wrote aes (12 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adslmod
+
+
+NOTE: Read 6 rows from adsl1.
+NOTE: Read 12 rows from adsl1.
+NOTE: Wrote adslmod (12 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table out1 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table out2 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table out3 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table out4 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table out5 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table out6 created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SQL 
+
+NOTE: Table Ncounts created.
+NOTE: PROC SQL statement used.
+NOTE: DATA Ncounts
+
+
+NOTE: Read 4 rows from Ncounts.
+NOTE: Wrote Ncounts (4 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA allcounts
+
+
+NOTE: Read 7 rows from out1.
+NOTE: Read 18 rows from out2.
+NOTE: Read 29 rows from out3.
+NOTE: Read 33 rows from out4.
+NOTE: Read 42 rows from out5.
+NOTE: Read 53 rows from out6.
+NOTE: Wrote allcounts (53 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table template created.
+NOTE: PROC SQL statement used.
+NOTE: PROC SORT data=allcounts
+
+NOTE: Read 53 rows from allcounts.
+NOTE: Wrote allcounts_s (53 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA counts_w0
+
+NOTE: Stream 1 processed 100 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 53 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote counts_w0 (114 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA counts_cat
+
+
+NOTE: Read 100 rows from counts_w0.
+NOTE: Wrote counts_cat (100 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC RANK data=counts_w0 out=Some("socranks") descending
+
+
+NOTE: Read 2 rows from /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/counts_w0.avro.
+NOTE: Wrote /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/socranks.avro (2 rows, 3 columns).
+NOTE: PROC RANK elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=counts_w0
+
+NOTE: Read 114 rows from counts_w0.
+NOTE: Wrote counts_w0s (100 rows, 10 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC RANK data=counts_w0s out=Some("ptranks") descending
+
+
+NOTE: Read 4 rows from /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/counts_w0s.avro.
+NOTE: Wrote /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/ptranks.avro (4 rows, 4 columns).
+NOTE: PROC RANK elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: INFORMAT relord defined (3 mappings)
+NOTE: PROC SQL 
+
+NOTE: Table counts_word created.
+NOTE: PROC SQL statement used.
+NOTE: PROC TRANSPOSE data=counts_word
+
+NOTE: Created 200 rows.
+NOTE: Output written to /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/counts_t.avro.
+NOTE: DATA counts_T
+
+
+NOTE: Read 100 rows from counts_T.
+NOTE: Wrote counts_T (100 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC TRANSPOSE data=counts_T
+
+NOTE: Created 17 rows.
+NOTE: Output written to /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/work/2dd19274-3080-4cf9-bb97-c606179b9013/counts_tt.avro.
+NOTE: DATA extrow
+
+
+NOTE: Read 17 rows from counts_TT.
+NOTE: Wrote extrow (19 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA final
+
+
+NOTE: Read 19 rows from extrow.
+NOTE: Wrote final (19 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA metadata
+
+
+NOTE: Read 1 rows from metadata.t_ae_rel.
+NOTE: Wrote metadata (1 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA _null_
+
+
+NOTE: Read 1 rows from metadata.
+NOTE: Wrote _null_ (1 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Domino Page ^{thispage} of ^{lastpage}.
+NOTE: Option TITLE2 changed to CDISC01.
+NOTE: Option TITLE3 changed to Table 14.3.1.
+NOTE: Option TITLE4 changed to Treatment Emergent Adverse Events by Relationship.
+NOTE: PROC REPORT data=final
+
+NOTE: PROC REPORT output 19 observations with 6 variables.
+
+NOTE: Read 19 rows from final.
+NOTE: Wrote (console) (19 rows, 6 columns).
+NOTE: PROC REPORT elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: ODS PDF: rendering images at 150 DPI.
+NOTE: ODS PDF: wrote report to /tmp/work/r_6baf9dfcb8014f28951337942d8e98d0/t_ae_rel.pdf.

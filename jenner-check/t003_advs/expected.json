@@ -1,0 +1,13 @@
+{
+  "_captured_at": "2026-07-17T12:00:00Z",
+  "_captured_run_id": "r_587b1e64c4af43c09894bae1157d684c",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DOMINO_IS_WORKFLOW_JOB is false",
+    "NOTE: Wrote adam.advs (15 rows, 6 columns).",
+    "NOTE: PROC PRINT completed: 15 observations printed, 6 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

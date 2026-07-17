@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_advs",
+  "source_file": "prod/adam/ADVS.sas",
+  "source_blob_sha": "a4f6c9e25aab3a82ea86d8e146a7dea12dc74fa4",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Creates ADaM ADVS by merging ADSL + SDTM.VS by USUBJID (data adam.advs; merge adam.adsl sdtm.vs (in=v); by usubjid; if v; run;). domino_is_workflow_job hardcoded to the standalone branch; autoexec.sas stands up a small mock ADSL + a 15-row mock VS dataset (SYSBP/DIABP/PULSE across 3 visit numbers, matching what t_vscat.sas reads downstream). Merge logic unmodified; added a trailing PROC PRINT for visible output."
+}

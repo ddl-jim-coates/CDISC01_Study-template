@@ -1,0 +1,7 @@
+{
+  "bundle": "t007_demographics_table",
+  "source_file": "demographics_table.sas",
+  "source_blob_sha": "e6de756915536d9137a9ae8892dfbf7332603b48",
+  "source_commit": "f1b0c7b19073669763fa38bfa27dd854460561d2",
+  "notes": "Self-contained demographics table: simulates its own ADSL-like population with CALL STREAMINIT(12345) for reproducibility, buckets into 6 age groups x 3 treatment arms, computes n (%) via PROC SQL + a macro loop, transposes with PROC TRANSPOSE, renders via PROC REPORT into an ODS PDF, and finishes with a verification PROC FREQ cross-tab. The repo file itself concatenates two identical copies of this program back-to-back; only the first copy is used here. project_name is hardcoded (was %sysget(DOMINO_PROJECT_NAME)); the %ensure_directory shell-out (x \"mkdir -p ...\") is dropped since the run's own working directory already exists. The simulated-subject loop bound is reduced from 300 to 90 (still a 1/3-1/3-1/3 split across arms) because the unlicensed Jenner engine hard-caps DATA step output at 100 rows -- at 300 the run silently truncated to only the first 100 (all-Placebo) subjects. No other logic is touched."
+}

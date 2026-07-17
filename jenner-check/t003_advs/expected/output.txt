@@ -1,0 +1,19 @@
+
+  Obs           usubjid                actarm  vstestcd                    vstest  visitnum  vsstresn
+-----  ----------------  --------------------  --------  ------------------------  --------  --------
+    1  CDISC01-701-1015  Placebo               SYSBP     Systolic Blood Pressure          3       118
+    2  CDISC01-701-1015  Placebo               DIABP     Diastolic Blood Pressure         3        76
+    3  CDISC01-701-1015  Placebo               PULSE     Pulse Rate                       3        68
+    4  CDISC01-701-1023  Xanomeline Low Dose   SYSBP     Systolic Blood Pressure          4       142
+    5  CDISC01-701-1023  Xanomeline Low Dose   DIABP     Diastolic Blood Pressure         4        92
+    6  CDISC01-701-1023  Xanomeline Low Dose   PULSE     Pulse Rate                       4        58
+    7  CDISC01-701-1028  Xanomeline High Dose  SYSBP     Systolic Blood Pressure         12        85
+    8  CDISC01-701-1028  Xanomeline High Dose  DIABP     Diastolic Blood Pressure        12        55
+    9  CDISC01-701-1028  Xanomeline High Dose  PULSE     Pulse Rate                      12       105
+   10  CDISC01-701-1033  Placebo               SYSBP     Systolic Blood Pressure          3       121
+   11  CDISC01-701-1033  Placebo               DIABP     Diastolic Blood Pressure         3        79
+   12  CDISC01-701-1033  Placebo               PULSE     Pulse Rate                       3        72
+   13  CDISC01-701-1040  Xanomeline Low Dose   SYSBP     Systolic Blood Pressure          4       130
+   14  CDISC01-701-1040  Xanomeline Low Dose   DIABP     Diastolic Blood Pressure         4        84
+   15  CDISC01-701-1040  Xanomeline Low Dose   PULSE     Pulse Rate                       4        64
+
